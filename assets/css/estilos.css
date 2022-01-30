@@ -1,9 +1,11 @@
 :root{
   --color1: rgb(0,64,64);
-  --color2: rgba(0,128,128,.0788);
-  --color3:rgba(0,66,66,0.5);
+  --color2: rgb(0,128,128);
+  --color3: rgb(0,102,102);
   --fondo:#f2f2f2;
   --titulos: 33px;
+  --subtitulos: 25px;
+  --texto: 17px;
   --margenes: 60px;
   --espacios: 10px;
   --espacios-contenidos: 45px;
@@ -76,8 +78,8 @@ header{
   background: linear-gradient(to bottom,
   rgba(0,64,64,.5),
   rgba(0,128,128,.3),
-  rgba(0,102,102,0.1)
-  ), url(fondo.jpg);
+  rgba(0,102,102,0.5)
+  ), url(../img/fondo.jpg);
   background-attachment:fixed;
   background-position: center;
   background-size: cover;
@@ -124,7 +126,7 @@ nav .enlaces a{
 }
 
 nav .enlaces a:hover{
-  border-bottom: 3px solid rgb(0,77,77);
+  border-bottom: 3px solid var(--color1);
   transition: 0.6s;
 }
 
@@ -155,8 +157,213 @@ nav .enlaces a:hover{
 }
 
 .textos>h3{
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 300;
 }
 
 /*Main*/
+
+.contenedor{
+  margin: auto;
+  padding: var(--margenes) 0;
+  width: 90%;
+  max-width: 1000px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.contenedor h3{
+  font-size: var(--titulos);
+  color: var(--color1);
+  margin-bottom: var(--espacios);
+}
+
+.contenedor p{
+  font-size: var(--texto);
+  font-weight: 300;
+  color: var(--color1);
+}
+
+.subtitulos::after{
+  content: "";
+  display: block;
+  margin: auto;
+  margin-top: var(--espacios);
+  width: 100px;
+  height: 2px;
+  background: var(--color1);
+  margin-bottom: var(--espacios-contenidos);
+}
+
+.contenedor-sobremi h4{
+  font-size: var(--subtitulos);
+}
+
+.cards{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contenedor-card{
+  width: 31%;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+  overflow: hidden;
+  height: 600px;
+}
+
+.img-card{
+  height: 70%;
+}
+
+.contenedor-card img{
+  margin-top: 10%;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.texto-card{
+  height: 30%;
+  width: 100%;
+  padding: var(--espacios) 0;
+}
+
+
+/*tecnologias*/
+
+.Stecnologias{
+  /* background: linear-gradient(to bottom,
+  rgba(255, 255, 255, 0.5),
+  rgba(0,128,128,.3),
+  rgba(217, 231, 231, 0.5)
+  ); */
+  background: url(../img/tecnologias/fondo-tecnologias2.jpg);
+  height: auto;
+  width: auto;
+}
+
+.tecnologias{
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.card-tecnologias{
+  padding: 1% 1%;
+  width: 20%;
+}
+
+.card-tecnologias img{
+  height: 80%;
+  width: 80%;
+}
+
+/* portafolio*/
+
+.botones-portafolio{
+  overflow: hidden;
+}
+
+.botones-portafolio li{
+  display: inline-block;
+  text-align: center;
+  margin-left: var(--espacios);
+  margin-bottom: var(--espacios-contenidos);
+  padding: 6px 12px;
+  border: 1px solid var(--color1);
+  list-style: none;
+  color: var(--color1);
+}
+
+.botones-portafolio li:hover{
+  background: var(--color1);
+  color: white;
+  cursor: pointer;
+}
+
+.botones-portafolio .activo{
+  background: var(--color1);
+  color: white;
+}
+
+.galeria-portafolio{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.galeria-portafolio .contenedorPorta{
+  width: 31%;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: var(--espacios-contenidos);
+}
+
+.imgPorta{
+  height: 90%;
+  width: 100%;
+}
+
+.imgPorta img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.textosPorta{
+  height: 10%;
+}
+
+.textoPorta h4{
+  line-height: 30px;
+  font-weight: 300;
+}
+
+/*Footer*/
+.contacto{
+  background: url(../img/tecnologias/fondo-tecnologias2.jpg);
+}
+
+.contenedor-logo{
+  width: 20%;
+  height: 50%;
+  margin: auto;
+  margin-bottom: var(--espacios-contenidos);
+}
+
+.contenedor-logo img{
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.contenedor-iconos{
+  height: 50%;
+  width: 80%;
+  margin: auto;
+  margin-bottom: var(--espacios);
+  display: flex;
+}
+
+.contenedor-iconos img{
+  display: flex;
+  margin: auto;
+  height: 10%;
+  width: 10%;
+}
+
+.contacto p{
+  margin-top: var(--espacios);
+  font-size: var(--texto);
+  margin-bottom: 3px;
+}
+
+.contacto h5{
+  font-size: 12px;
+  color: var(--color1);
+}
