@@ -25,6 +25,8 @@ function barranav(){
 }
 
 window.addEventListener('load', function(){
+    $('#onload').fadeOut();
+    $('body').removeClass('hidden');
     barranav();
 });
 
@@ -50,9 +52,29 @@ abrir.addEventListener('click', function(){
 });
 
 window.addEventListener('resize', function(){
-    if(screen.width >= 700){
+    if(screen.width >= 750){
         cerrado = true;
         menu.style.removeProperty('overflow');
         menu.style.removeProperty('width');
     }
+    if(screen.width == 750){
+        location.reload();
+    }else if(this.screen.width == 530){
+        location.reload();
+    }
 });
+
+//cerrar menu al tocar en la pantalla
+window.addEventListener('click', function(e){
+    console.log(e.target);
+    if(cerrado == false){
+        let span = document.querySelector('span');
+        if(e.target !== span && e.target !== abrir){
+            menu.style.width = '0%';
+            menu.style.overflow = 'hidden';
+            cerrado = true;
+        }
+    }
+});
+
+

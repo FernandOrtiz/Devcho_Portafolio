@@ -27,6 +27,21 @@ img{
 }
 
 /*Preloader*/
+.hidden{
+  overflow: hidden;
+}
+
+.centrado{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: var(--color2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .lds-facebook {
   display: inline-block;
   position: relative;
@@ -167,7 +182,7 @@ nav .enlaces a:hover{
 .contenedor{
   margin: auto;
   padding: var(--margenes) 0;
-  width: 90%;
+  width: 100%;
   max-width: 1000px;
   text-align: center;
   overflow: hidden;
@@ -196,8 +211,18 @@ nav .enlaces a:hover{
   margin-bottom: var(--espacios-contenidos);
 }
 
+/*Sobre mi*/
+
 .contenedor-sobremi h4{
   font-size: var(--subtitulos);
+  width: 100%;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.contenedor-sobremi p{
+  width: 100%;
+  padding: 0 10px;
 }
 
 .cards{
@@ -214,7 +239,7 @@ nav .enlaces a:hover{
 }
 
 .img-card{
-  height: 70%;
+  height: 65%;
 }
 
 .contenedor-card img{
@@ -225,9 +250,10 @@ nav .enlaces a:hover{
 }
 
 .texto-card{
-  height: 30%;
-  width: 100%;
+  height: 35%;
+  width: 95%;
   padding: var(--espacios) 0;
+  text-align: center;
 }
 
 
@@ -340,7 +366,7 @@ nav .enlaces a:hover{
   display: flex;
   margin: auto;
   justify-content: space-around;
-  width: 100%;
+  width: 85%;
 }
 
 .contenedor-iconos{
@@ -369,7 +395,9 @@ nav .enlaces a:hover{
   color: var(--color1);
 }
 
-@media screen and (max-width: 700px){
+/* Diseño responsivo */
+
+@media screen and (max-width: 750px){
   .nav2{
     color: #fff;
   }
@@ -399,4 +427,50 @@ nav .enlaces a:hover{
     background: var(--color2);
     color: #fff;
   }
+
+  .textos>h1{
+    font-size: 70px;
+  }
+
+  .textos>h3{
+    font-size: 30px;
+  }
+
+  :root{
+    --margenes: 30px;
+  }
+  
+  .contenedor-card{
+    width: 48%;
+    margin-bottom: var(--margenes);
+  }
+}
+
+@media screen and (max-width: 530px){
+  :root{
+    --espacios-contenido: 25px;
+  }
+
+  .contenedor-card{
+    width: 90%;
+  }
+
+  .card-tecnologias{
+    padding: 1% 1%;
+    width: 30%;
+  }
+
+  .galeria-portafolio .contenedorPorta{
+    width: 85%;
+  }
+
+  .contenedor-logo img{
+    width: 100%;
+  }
+
+  .contenedor-iconos img{
+    height: 20%;
+    width: 20%;
+  }
+
 }
