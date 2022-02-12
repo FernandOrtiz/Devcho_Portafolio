@@ -1,8 +1,8 @@
-:root{
-  --color1: rgb(0,64,64);
-  --color2: rgb(0,128,128);
-  --color3: rgb(0,102,102);
-  --fondo:#f2f2f2;
+:root {
+  --color1: rgb(0, 64, 64);
+  --color2: rgb(0, 128, 128);
+  --color3: rgb(0, 102, 102);
+  --fondo: #f2f2f2;
   --titulos: 33px;
   --subtitulos: 25px;
   --texto: 17px;
@@ -11,27 +11,27 @@
   --espacios-contenidos: 45px;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
 }
 
-body{
+body {
   font-family: system-ui;
   background: var(--fondo);
 }
 
-img{
+img {
   vertical-align: top;
 }
 
 /*Preloader*/
-.hidden{
+.hidden {
   overflow: hidden;
 }
 
-.centrado{
+.centrado {
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -79,7 +79,8 @@ img{
     height: 64px;
   }
 
-  50%, 100% {
+  50%,
+  100% {
     top: 24px;
     height: 32px;
   }
@@ -87,38 +88,37 @@ img{
 
 /*Header*/
 
-header{
+header {
   width: 100%;
   height: 600px;
   background: linear-gradient(to bottom,
-  rgba(0,64,64,.5),
-  rgba(0,128,128,.3),
-  rgba(0,102,102,0.5)
-  ), url(../img/fondo.jpg);
-  background-attachment:fixed;
+      rgba(0, 64, 64, .5),
+      rgba(0, 128, 128, .3),
+      rgba(0, 102, 102, 0.5)), url(../img/fondo.jpg);
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
 }
 
-#nav{
+#nav {
   position: fixed;
   width: 100%;
-  box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
 }
 
-.nav1{
+.nav1 {
   background: transparent;
   height: 80px;
   color: #fff;
 }
 
-.nav2{
+.nav2 {
   background: var(--fondo);
   height: 100px;
   color: var(--color1);
 }
 
-.contenedor-nav{
+.contenedor-nav {
   display: flex;
   margin: auto;
   height: inherit;
@@ -129,7 +129,7 @@ header{
   overflow: hidden;
 }
 
-nav .enlaces a{
+nav .enlaces a {
   display: inline-block;
   padding: 5px 0;
   margin-right: 17px;
@@ -140,22 +140,23 @@ nav .enlaces a{
   color: inherit;
 }
 
-nav .enlaces a:hover{
+nav .enlaces a:hover {
   border-bottom: 3px solid var(--color1);
   transition: 0.6s;
 }
 
-.logo, .logo img{
+.logo,
+.logo img {
   height: 80px;
 }
 
-.menu{
+.menu {
   display: none;
   font-size: 24px;
   padding: 24px 20px;
 }
 
-.textos{
+.textos {
   height: 100%;
   width: 100%;
   display: flex;
@@ -167,19 +168,19 @@ nav .enlaces a:hover{
   text-align: center;
 }
 
-.textos>h1{
+.textos>h1 {
   font-size: 100px;
-  font-weight:200;
+  font-weight: 200;
 }
 
-.textos>h3{
+.textos>h3 {
   font-size: 40px;
   font-weight: 300;
 }
 
 /*Main*/
 
-.contenedor{
+.contenedor {
   margin: auto;
   padding: var(--margenes) 0;
   width: 100%;
@@ -188,19 +189,19 @@ nav .enlaces a:hover{
   overflow: hidden;
 }
 
-.contenedor h3{
+.contenedor h3 {
   font-size: var(--titulos);
   color: var(--color1);
   margin-bottom: var(--espacios);
 }
 
-.contenedor p{
+.contenedor p {
   font-size: var(--texto);
   font-weight: 300;
   color: var(--color1);
 }
 
-.subtitulos::after{
+.subtitulos::after {
   content: "";
   display: block;
   margin: auto;
@@ -213,43 +214,43 @@ nav .enlaces a:hover{
 
 /*Sobre mi*/
 
-.contenedor-sobremi h4{
+.contenedor-sobremi h4 {
   font-size: var(--subtitulos);
   width: 100%;
   align-items: center;
   padding: 0 10px;
 }
 
-.contenedor-sobremi p{
+.contenedor-sobremi p {
   width: 100%;
   padding: 0 10px;
 }
 
-.cards{
+.cards {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.contenedor-card{
+.contenedor-card {
   width: 31%;
-  box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
   overflow: hidden;
   height: 600px;
 }
 
-.img-card{
+.img-card {
   height: 65%;
 }
 
-.contenedor-card img{
+.contenedor-card img {
   margin-top: 10%;
   width: 90%;
   height: 90%;
   object-fit: cover;
 }
 
-.texto-card{
+.texto-card {
   height: 35%;
   width: 95%;
   padding: var(--espacios) 0;
@@ -259,7 +260,7 @@ nav .enlaces a:hover{
 
 /*tecnologias*/
 
-.Stecnologias{
+.Stecnologias {
   /* background: linear-gradient(to bottom,
   rgba(255, 255, 255, 0.5),
   rgba(0,128,128,.3),
@@ -270,7 +271,7 @@ nav .enlaces a:hover{
   width: auto;
 }
 
-.tecnologias{
+.tecnologias {
   display: flex;
   color: white;
   justify-content: space-between;
@@ -278,23 +279,23 @@ nav .enlaces a:hover{
   flex-wrap: wrap;
 }
 
-.card-tecnologias{
+.card-tecnologias {
   padding: 1% 1%;
   width: 20%;
 }
 
-.card-tecnologias img{
+.card-tecnologias img {
   height: 80%;
   width: 80%;
 }
 
 /* portafolio*/
 
-.botones-portafolio{
+.botones-portafolio {
   overflow: hidden;
 }
 
-.botones-portafolio li{
+.botones-portafolio li {
   display: inline-block;
   text-align: center;
   margin-left: var(--espacios);
@@ -305,71 +306,71 @@ nav .enlaces a:hover{
   color: var(--color1);
 }
 
-.botones-portafolio li:hover{
+.botones-portafolio li:hover {
   background: var(--color1);
   color: white;
   cursor: pointer;
 }
 
-.botones-portafolio .activo{
+.botones-portafolio .activo {
   background: var(--color1);
   color: white;
 }
 
-.galeria-portafolio{
+.galeria-portafolio {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.galeria-portafolio .contenedorPorta{
+.galeria-portafolio .contenedorPorta {
   width: 31%;
-  box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
   height: 300px;
   overflow: hidden;
   margin-bottom: var(--espacios-contenidos);
 }
 
-.imgPorta{
+.imgPorta {
   height: 90%;
   width: 100%;
 }
 
-.imgPorta img{
+.imgPorta img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.textosPorta{
+.textosPorta {
   height: 10%;
 }
 
-.textoPorta h4{
+.textoPorta h4 {
   line-height: 30px;
   font-weight: 300;
 }
 
 /*Footer*/
-.contacto{
+.Scontacto {
   background: url(../img/tecnologias/fondo-tecnologias2.jpg);
 }
 
-.contenedor-logo{
+.contenedor-logo {
   width: 20%;
   height: 50%;
   margin: auto;
   margin-bottom: var(--espacios-contenidos);
 }
 
-.contenedor-logo img{
+.contenedor-logo img {
   display: flex;
   margin: auto;
   justify-content: space-around;
   width: 85%;
 }
 
-.contenedor-iconos{
+.contenedor-iconos {
   height: 50%;
   width: 80%;
   margin: auto;
@@ -377,37 +378,37 @@ nav .enlaces a:hover{
   display: flex;
 }
 
-.contenedor-iconos img{
+.contenedor-iconos img {
   display: flex;
   margin: auto;
   height: 10%;
   width: 10%;
 }
 
-.contacto p{
+.Scontacto p {
   margin-top: var(--espacios);
   font-size: var(--texto);
   margin-bottom: 3px;
 }
 
-.contacto h5{
+.Scontacto h5 {
   font-size: 12px;
   color: var(--color1);
 }
 
 /* Diseño responsivo */
 
-@media screen and (max-width: 750px){
-  .nav2{
+@media screen and (max-width: 750px) {
+  .nav2 {
     color: #fff;
   }
 
-  .menu{
+  .menu {
     display: block;
     cursor: pointer;
   }
 
-  .enlaces{
+  .enlaces {
     position: fixed;
     top: 80px;
     background: var(--color3);
@@ -418,57 +419,57 @@ nav .enlaces a:hover{
     overflow: hidden;
   }
 
-  .enlaces a{
+  .enlaces a {
     display: block;
     width: 100%;
     height: 50px;
-    padding: 20px;   
+    padding: 20px;
     text-align: center;
     background: var(--color2);
     color: #fff;
   }
 
-  .textos>h1{
+  .textos>h1 {
     font-size: 70px;
   }
 
-  .textos>h3{
+  .textos>h3 {
     font-size: 30px;
   }
 
-  :root{
+  :root {
     --margenes: 30px;
   }
-  
-  .contenedor-card{
+
+  .contenedor-card {
     width: 48%;
     margin-bottom: var(--margenes);
   }
 }
 
-@media screen and (max-width: 530px){
-  :root{
+@media screen and (max-width: 530px) {
+  :root {
     --espacios-contenido: 25px;
   }
 
-  .contenedor-card{
+  .contenedor-card {
     width: 90%;
   }
 
-  .card-tecnologias{
+  .card-tecnologias {
     padding: 1% 1%;
     width: 30%;
   }
 
-  .galeria-portafolio .contenedorPorta{
+  .galeria-portafolio .contenedorPorta {
     width: 85%;
   }
 
-  .contenedor-logo img{
+  .contenedor-logo img {
     width: 100%;
   }
 
-  .contenedor-iconos img{
+  .contenedor-iconos img {
     height: 20%;
     width: 20%;
   }

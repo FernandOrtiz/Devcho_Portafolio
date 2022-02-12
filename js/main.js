@@ -66,7 +66,7 @@ window.addEventListener('resize', function(){
 
 //cerrar menu al tocar en la pantalla
 window.addEventListener('click', function(e){
-    console.log(e.target);
+    //console.log(e.target);
     if(cerrado == false){
         let span = document.querySelector('span');
         if(e.target !== span && e.target !== abrir){
